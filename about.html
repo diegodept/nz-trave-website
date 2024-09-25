@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NZ Trave</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+</head>
+<body class="contact">
+
+<nav>
+  <ul class="sidebar">
+    <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+    <li><a href="index.html">home</a></li>
+    <li><a href="tour.html">tour</a></li>
+    <li><a href="about.html">about</a></li>
+    <li><a href="contact.html">contact</a></li>
+  </ul>
+
+  <ul class="navbar-desktop">
+    <li><a href="index.html"><img src="logo/nztrave-03.svg"></a></li>
+    <div class="menu-items">
+      <li class="hideOnMobile"><a href="index.html">home</a></li>
+      <li class="hideOnMobile"><a href="tour.html">tour</a></li>
+      <li class="hideOnMobile"><a href="about.html">about</a></li>
+      <li class="hideOnMobile"><a href="contact.html">contact</a></li>
+      <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+    </div>
+  </ul>
+</nav>
+
+<!-- about -->
+
+<div class="aboutContainer">
+    
+  <div class="aboutUs">
+    <h2>about us</h2>
+    <br>
+   
+    <p>
+      At NZ Trave, we are passionate about showcasing the breathtaking
+      beauty and unique experiences that New Zealand has to offer. Nestled in the heart
+      of the South Pacific, New Zealand is renowned for its stunning landscapes, vibrant
+      culture, and warm hospitality.
+    </p>
+    <br>
+
+    <p>
+      Whether you're dreaming of exploring the rugged fjords of Fiordland National Park,
+      embarking on an adrenaline-pumping adventure in Queenstown, or relaxing on the
+      pristine beaches of the Bay of Islands, we are here to make your New Zealand travel
+      dreams a reality.
+    </p>
+    </div>
+
+<div class="image">
+    <img src="images/about.png" alt="about">
+</div>
+
+</div>
+
+  
+
+<!-- FOOTER -->
+ 
+<footer>
+  <div class="footerContainer">
+  
+    <div class="socialIcons">
+      
+      <div class="footerbottom">
+        <p>Copyright &copy;2024; Designed by <span class="designer">diegosoto</span></p>
+      </div> 
+      
+      <div><a href=""><i class="fa-brands fa-facebook"></i></a>
+        <a href=""><i class="fa-brands fa-instagram"></i></a>
+        <a href=""><i class="fa-brands fa-twitter"></i></a>
+        <a href=""><i class="fa-brands fa-tiktok"></i></a>
+      </div>
+      
+    </div>
+</div>
+</footer>
+
+
+<script>
+function showSidebar(){
+  const sidebar = document.querySelector('.sidebar')
+  sidebar.style.display = 'flex'
+}
+
+function hideSidebar(){
+   const sidebar = document.querySelector('.sidebar')
+  sidebar.style.display = 'none'
+}
+</script>  
+</body>
+</html>
